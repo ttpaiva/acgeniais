@@ -98,8 +98,8 @@ class PostsController < ApplicationController
   
   def archive
     @posts = Post.all
-	  @post_months = @posts.group_by { |t| t.created_at.beginning_of_month }
-    @post = Post.find(:all, :conditions => ["STRFTIME('%m') = ?", params[:month]])
+	@post_months = @posts.group_by { |t| t.created_at.beginning_of_month }
+    @post = Post.find(:all, :conditions => ["STRFTIME('%y') = ? AND STRFTIME('%m') = ?", params[:year], params[:month]])
     
       respond_to do |format|
         format.html # show.html.erb

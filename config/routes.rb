@@ -4,7 +4,7 @@ Cfonseca::Application.routes.draw do
 	resources :comments
   end
   
-  match '/posts/:month/archive', :to =>'posts#archive', :as => "archive"
+  match '/posts/:year/:month/archive', :to =>'posts#archive', :as => "archive"
   
   get "home/index"
   root :to => "home#index"
