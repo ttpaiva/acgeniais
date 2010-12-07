@@ -1,0 +1,20 @@
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <div class="notice"><%= notice %></div>
+  <div id="comment-form">
+	  <div class="field">
+		<%= f.label :nome %>
+		<%= f.text_field :commenter %>
+	  </div>
+	  <div class="field">
+		<%= f.label :date %>
+		<%= f.text_field :created_at %>
+	  </div>
+	  <div class="field">
+		<%= f.label :comentário %>
+		<%= f.text_area :body %>
+	  </div>
+	  <div class="actions">
+		<%= f.submit :'Comentar', :class => "g-button" %>
+	  </div>
+  </div>
+<% end %>

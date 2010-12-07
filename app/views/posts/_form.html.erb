@@ -1,0 +1,43 @@
+<% @post.tags.build %>
+<%= form_for @post, :html => { :multipart => true } do |post_form| %>
+  <% if @post.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+    <ul>
+    <% @post.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+ 
+  <div class="field">
+    <%= post_form.label :name %><br />
+    <%= post_form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= post_form.label :title %><br />
+    <%= post_form.text_field :title %>
+  </div>
+  <div class="field">
+    <%= post_form.label :date %><br />
+    <%= post_form.text_field :created_at %>
+  </div>
+  <div class="field">
+    <%= post_form.label :summary %><br />
+    <%= post_form.text_area :summary %>
+  </div>
+  <div class="field">
+    <%= post_form.label :content %><br />
+    <%= post_form.text_area :content, :escape => true %>
+  </div>
+ <div class="field">
+     <%= post_form.label :file %><br />
+    <%= post_form.file_field :file %>
+</div>
+  <%= render :partial => 'tags/form',
+             :locals => {:form => post_form} %>
+  <div class="actions">
+    <%= post_form.submit:'Criar post', :class => "g-button" %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+
+
+	      <div class="post">
+		  
+		    <h2><%= link_to  @post.name, @post %></h2>
+		   
+		    <div class="post-header">
+  
+		 
+		  <p>Publicado em <a href="#"><%= join_tags(@post) %></a> por cfonseca em <%= l @post.created_at, :format => :default  %>.</p>
+		    </div>
+			<% if FileTest.exists?("#{@post.file.path}")%>
+		     <%= image_tag( @post.file.url, :alt => "Blog", :class => "post-img") %>
+			<% end %>
+	       	     <p><%= simple_format(@post.content) %></p>
+		   
+		     <div class="post-footer">
+		      <%= image_tag("comment2.jpg", :class => "comment-img") %>
+
+		<%= link_to pluralize( @post.comments.count, "comentário", "comentários"), post_path(@post, :anchor => "comments"), :class => "comment" %>
+		     <%= image_tag("images.jpg", :class => "like") %>
+		    
+		     </div>
+           
+			
+ 
+			<div id="comments">
+				<%= render @post.comments %>
+				 
+				<div id="title">Comentar</div>
+				<%= render "comments/form" %>
+			</div>
+			
+		</div>
+
+
+<!--  <%= link_to 'Edit Post', edit_post_path(@post) %> |
+<%= link_to 'Back to Posts', posts_path %> | -->
+

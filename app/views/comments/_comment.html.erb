@@ -1,0 +1,16 @@
+<div class="single-comment">
+	<p class="commenter">
+	  <%= comment.commenter %><br/>
+	  <span><%= l comment.created_at, :format => :long %></span> 
+	</p>
+	
+	<p><%= comment.body %></p>
+	
+	<!-- <p>
+	  <%= link_to 'Destroy Comment', [comment.post, comment],   
+	  :confirm => 'Are you sure?',    
+	  :method => :delete %>
+	</p> -->
+</div>
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Academicamente Geniais</title>
+  
+  <link REL="SHORTCUT ICON" HREF="/images/icon.png">
+  
+  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+  <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+  <%= stylesheet_link_tag 'style' %> 
+
+  <%= csrf_meta_tag %>
+</head>
+<body>
+    <div id="top"/>
+    <div class="container">
+      <%= render 'layouts/header' %>
+
+	   <div id="content">
+
+	    	<div id="posts">
+
+		<%= yield %>
+
+		</div>
+		<%= render 'layouts/sidebar' %>
+
+	   </div>
+    </div>
+      <%= render 'layouts/footer' %>
+
+</body>
+</html>
