@@ -1,0 +1,34 @@
+# Typus Models Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+Comment:
+  fields:
+    default: commenter, post_id, post
+    form: commenter, body, post_id, post
+  order_by: 
+  relationships: post
+  filters: 
+  search: 
+  application: cfonseca
+
+Post:
+  fields:
+    default: name, title, file_file_name
+    form: name, title, content, summary, file_file_name
+  order_by: 
+  relationships: comments, tags
+  filters: 
+  search: name, title
+  application: cfonseca
+
+Tag:
+  fields:
+    default: name, post_id, post
+    form: name, post_id, post
+  order_by: 
+  relationships: post
+  filters: 
+  search: name
+  application: cfonseca
+

@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   layout "application"
 
 
-   before_filter :authenticate, :except => [:index, :show]
+   before_filter :authenticate, :except => [:index, :show, :archive]
   # GET /posts
   # GET /posts.xml
   def index

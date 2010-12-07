@@ -1,4 +1,4 @@
-<% @posts = Post.paginate :page => params[:page], :order => 'created_at DESC' %>
+ï»¿<% @posts = Post.paginate :page => params[:page], :order => 'created_at DESC' %>
 
 <% @posts.each do |post| %>
 	    <div class="post">
@@ -20,7 +20,7 @@
 		     <p class="cler"><%= link_to 'Continuar a ler>>', post %></p>
 		     <div class="post-footer">
 		     <%= image_tag("comment2.jpg", :class => "comment-img") %>
-			  <%= link_to pluralize( post.comments.count, "comentário", "comentários"), post_path(post, :anchor => "comments"), :class => "comment" %>
+			  <%= link_to pluralize( post.comments.count, "comentÃ¡rio", "comentÃ¡rios"), post_path(post, :anchor => "comments"), :class => "comment" %>
 		     <%= image_tag("images.jpg", :class => "like") %>
 
 		     </div>
