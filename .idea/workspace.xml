@@ -33,19 +33,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_sidebar.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_sidebar.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="86" selection-start="835" selection-end="835" vertical-scroll-proportion="0.4441417">
+            <state line="21" column="86" selection-start="835" selection-end="835" vertical-scroll-proportion="-6.269231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="82" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.0">
+            <state line="101" column="82" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.6572165">
               <folding />
             </state>
           </provider>
@@ -114,6 +123,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -504,16 +514,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="82" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.0">
+        <state line="21" column="86" selection-start="835" selection-end="835" vertical-scroll-proportion="-6.269231">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="86" selection-start="835" selection-end="835" vertical-scroll-proportion="0.4441417">
+        <state line="7" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="82" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.6572165">
           <folding />
         </state>
       </provider>
