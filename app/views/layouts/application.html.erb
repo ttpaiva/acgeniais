@@ -9,7 +9,18 @@
   <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
   <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
   <%= stylesheet_link_tag 'style' %> 
+  <%= javascript_include_tag 'tiny_mce/tiny_mce' %>
+	<script type="text/javascript">
+	tinyMCE.init({
+		mode : "textareas",
+		theme : "simple",
+		content_css : "css/content.css",
+		theme_advanced_font_sizes: "14px,16px,18px,20px",
+		font_size_style_values : "14px,16px,18px,20px"
+	});
+	</script>
 
+	
   <%= csrf_meta_tag %>
 </head>
 <body>
