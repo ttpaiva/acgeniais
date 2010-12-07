@@ -9,9 +9,11 @@
 		 
 		  <p>Publicado em <a href="#"><%= join_tags(@post) %></a> por cfonseca em <%= l @post.created_at, :format => :default  %>.</p>
 		    </div>
-			<% if FileTest.exists?("#{@post.file.path}")%>
-		     <%= image_tag( @post.file.url, :alt => "Blog", :class => "post-img") %>
+			
+			<% if @post.file.exists? then %>
+			<%= image_tag @post.file.url(:medium),:alt => "Blog", :class => "post-img" %>
 			<% end %>
+
 	       	     <p><%= simple_format(@post.content) %></p>
 		   
 		     <div class="post-footer">

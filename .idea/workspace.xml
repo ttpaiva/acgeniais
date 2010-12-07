@@ -45,7 +45,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -54,7 +54,7 @@
       <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="82" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.6572165">
+            <state line="101" column="82" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.70247936">
               <folding />
             </state>
           </provider>
@@ -523,14 +523,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+        <state line="6" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="82" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.6572165">
+        <state line="101" column="82" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.70247936">
           <folding />
         </state>
       </provider>
